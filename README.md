@@ -1,10 +1,19 @@
 # Placeholder
 
+
+<p>
+    <img src="https://img.shields.io/badge/iOS-9.0+-blue.svg" />
+    <img src="https://img.shields.io/badge/Swift-4.0-brightgreen.svg" />
+    <a href="https://twitter.com/twostraws">
+        <img src="https://img.shields.io/badge/Contact-@twostraws-lightgrey.svg?style=flat" alt="Twitter: @twostraws" />
+    </a>
+</p>
+
 When you’re busy prototyping an app, it’s helpful to be able to see at a glance what images still need to be filled and what size they are. Placeholder does exactly that: it’s a `UIImageView` subclass that automatically renders its size along with any title you want.
 
 ![Placeholder overlays an image’s size and title so you can see exactly what’s missing.](https://www.hackingwithswift.com/files/placeholder/screenshot.png)
 
-To install, just drag Placeholder.swift into your Xcode project, then make change the class of any placeholder images to be `Placeholder` rather than `UIImageView`. When the final artwork arrives, all you need to do is change the class back to `UIImageView` and you’re back to normal – easy!
+To install, just drag Placeholder.swift into your Xcode project, then change the class of any placeholder image views to be `Placeholder` rather than `UIImageView`. When the final artwork arrives, all you need to do is change the class back to `UIImageView` and you’re back to normal – easy!
 
 **Note:** Xcode 9.2 and earlier overlay the words “UIImageView” on all `UIImageView` subclasses, but this only occurs at design time. This bug is fixed in Xcode 9.3.
 
