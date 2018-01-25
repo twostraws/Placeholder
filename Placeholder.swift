@@ -36,6 +36,9 @@ Placeholder is a `UIImageView` subclass that makes it easy to show
 
     /// The color of the title text
     @IBInspectable var textColor: UIColor = .white
+    
+    /// The font size of the title text
+    @IBInspectable var textFontSize: CGFloat = 20
 
     /// Whether to round the edges of the placeholder graphic.
     /// This automatically rounds to the smallest of the width
@@ -44,6 +47,9 @@ Placeholder is a `UIImageView` subclass that makes it easy to show
 
     /// The label used to render title and size text
     private var label: UILabel!
+    
+    /// Adjustment in font size to make the title font slightly bigger
+    private let titleFontSizeAdjustment: CGFloat = 4
 
     override required init(frame: CGRect) {
         super.init(frame: frame)
@@ -91,7 +97,7 @@ Placeholder is a `UIImageView` subclass that makes it easy to show
         let size = "\(width)x\(height)"
 
         // configure attributes of the size text
-        let sizeAttrs =  [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 20)]
+        let sizeAttrs =  [NSAttributedStringKey.font: UIFont.systemFont(ofSize: textFontSize)]
         let sizeString = NSAttributedString(string: size, attributes: sizeAttrs)
 
         if title.isEmpty {
@@ -100,7 +106,7 @@ Placeholder is a `UIImageView` subclass that makes it easy to show
         } else {
             // if we do have a title, prepare that with some attributes that are slightly
             // bigger than the size
-            let titleAttrs = [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 24)]
+            let titleAttrs = [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: textFontSize + titleFontSizeAdjustment)]
             let titleString = NSMutableAttributedString(string: "\(title)\n", attributes: titleAttrs)
 
             // append the size string and put it inside the label
