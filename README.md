@@ -24,6 +24,7 @@ There are three properties for `Placeholder` images that you might want to custo
 
 - `title` lets you add an optional string to be placed above the size, e.g. “User avatar”.
 - `textColor` lets you adjust the text color used to render the title and size. Defaults to `.white`.
+- `textFontSize` lets you adjust the text font size used to render the title and size. Defaults to `20`.
 - `rounded` rounds the corners of the image view using the minimum of the width and height. This creates lozenges in rectangular views and circles in square views.
 
 
