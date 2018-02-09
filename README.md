@@ -20,7 +20,7 @@ To install, just drag Placeholder.swift into your Xcode project, then change the
 
 ## Options
 
-There are three properties for `Placeholder` images that you might want to customize, all of which are exposed to Interface Builder:
+There are four properties for `Placeholder` images that you might want to customize, all of which are exposed to Interface Builder:
 
 - `title` lets you add an optional string to be placed above the size, e.g. “User avatar”.
 - `textColor` lets you adjust the text color used to render the title and size. Defaults to `.white`.
