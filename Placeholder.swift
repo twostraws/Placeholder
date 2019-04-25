@@ -97,7 +97,7 @@ Placeholder is a `UIImageView` subclass that makes it easy to show
         let size = "\(width)x\(height)"
 
         // configure attributes of the size text
-        let sizeAttrs =  [NSAttributedStringKey.font: UIFont.systemFont(ofSize: textFontSize)]
+        let sizeAttrs =  [NSAttributedString.Key.font: UIFont.systemFont(ofSize: textFontSize)]
         let sizeString = NSAttributedString(string: size, attributes: sizeAttrs)
 
         if title.isEmpty {
@@ -106,7 +106,7 @@ Placeholder is a `UIImageView` subclass that makes it easy to show
         } else {
             // if we do have a title, prepare that with some attributes that are slightly
             // bigger than the size
-            let titleAttrs = [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: textFontSize + titleFontSizeAdjustment)]
+            let titleAttrs = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: textFontSize + titleFontSizeAdjustment)]
             let titleString = NSMutableAttributedString(string: "\(title)\n", attributes: titleAttrs)
 
             // append the size string and put it inside the label

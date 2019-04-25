@@ -2,8 +2,8 @@
 
 
 <p>
-    <img src="https://img.shields.io/badge/iOS-9.0+-blue.svg" />
-    <img src="https://img.shields.io/badge/Swift-4.0-brightgreen.svg" />
+    <img src="https://img.shields.io/badge/iOS-10.0+-blue.svg" />
+    <img src="https://img.shields.io/badge/Swift-5.0-brightgreen.svg" />
     <a href="https://twitter.com/twostraws">
         <img src="https://img.shields.io/badge/Contact-@twostraws-lightgrey.svg?style=flat" alt="Twitter: @twostraws" />
     </a>
@@ -15,7 +15,6 @@ When you’re busy prototyping an app, it’s helpful to be able to see at a gla
 
 To install, just drag Placeholder.swift into your Xcode project, then change the class of any placeholder image views to be `Placeholder` rather than `UIImageView`. When the final artwork arrives, all you need to do is change the class back to `UIImageView` and you’re back to normal – easy!
 
-**Note:** Xcode 9.2 and earlier overlay the words “UIImageView” on all `UIImageView` subclasses, but this only occurs at design time. This bug is fixed in Xcode 9.3.
 
 
 ## Options
@@ -32,7 +31,7 @@ There are four properties for `Placeholder` images that you might want to custom
 
 MIT License.
 
-Copyright (c) 2018 Paul Hudson
+Copyright (c) 2019 Paul Hudson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
